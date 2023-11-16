@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Shoes Card</title>
+		<link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="card-container">
+                <div class="images-conainer">                    
+                    <div class="img-icon" onmouseover="changeImgSrc('shoe_1.png')"><img src="shoe_1.png"/></div>
+                    <div class="img-icon" onmouseover="changeImgSrc('shoe_2.png')"><img src="shoe_2.png"/></div>
+                    <div class="img-icon" onmouseover="changeImgSrc('shoe_3.png')"><img src="shoe_3.png"/></div>                   
+                </div>
+                <div class="display-container">
+                    <h2>Sparx Shoes</h2>
+                    <img src="shoe_1.png" id="display-shoe"/>
+                    <div class="sizes-container">
+                        <p>Size</p>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function changeImgSrc(imgUrl){
+                document.getElementById("display-shoe").src=imgUrl;
+            }
+        </script>
+    </body>
+</html>
